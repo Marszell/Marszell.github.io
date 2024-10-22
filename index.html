@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Porto</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section></section>
+    <div class="layer">
+      <h2>Hello <br />I'am Marcel</h2>
+      <h1>Software <br />Engineer</h1>
+    </div>
+
+    <section id="About" class="wrap">
+      <h2>About Me</h2>
+      <div class="wrapper">
+        <div class="bySide">
+          <div class="desc">
+          <p>My name is Josef Marcelino Sijaya,I am Computer Science stundent, I am interested
+            to become a back-end developer or Fullstack developer, I'm currently focusing on
+            learning Software Engineer (Fullstack), Create a simple website for learnin, and
+            deepening my skills in Leetcode.</p>
+            <br>
+            <p>I enjoy learning new things and taking on challenges because my competitive side helps motivate me even more.
+              I want to improve my abilities and believe I can easily pick up new skills.I like to fill my free time with more productive activities.
+              Therefore, I am constantly seeking opportunities that allow me to grow and develop my skills. One area I am particularly interested in is technology.
+            </p>
+            <br>
+            <p>My toolkit includes Nextjs for Frontend and Backend, CSS, Postgresql, Postman API, Auth, etc.
+              I'm also using python for leetcode or making simple project like bot discord. I get along well with people and hope to make many friends to work with
+            </p>
+          </div>
+          <div class="image">
+            <img src="./porto.jpg" alt="photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Project" class="wrap">
+      <h1>My Projects</h1>
+      <div class="show">
+        <a class="card" href="https://github.com/Marszell/bot_discord_reminder?tab=readme-ov-file">
+          <img src="./project1.png" alt="" class="gambar" height="240px"/>
+          <p>Bot Discord</p>
+        </a>
+        <a class="card" href="https://github.com/Marszell/nextadmin/tree/Master">
+          <img src="./dashboard user_2.jpg" alt="" class="gambar" height="240px" />
+          <p>E-commerce</p>
+        </a>
+        <a class="card" href="https://github.com/Marszell/course-nextjs">
+          <img src="./project3.JPG" alt="" class="gambar" height="240px"/>
+          <p>Admin dashboard</p>
+        </a>
+        <a class="card" href="#">
+          <img src="./project4.JPG" alt="" class="gambar" height="240px"/>
+          <p>Todo</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="Contact" class="wrap">
+      <h1>
+        Contact Me
+      </h1>
+      <div class="wrapper">
+        <div class="bySide">
+        <div class="Contact-info">
+          <p>Email : josefmarcelinos.com</p>
+          <p>Phone : +62 851 5822 9159</p>
+          <p>CV:<a href="./CV Josef Marcelino Sijaya.pdf">CV</a></p>
+          <p>LinkedIn<i class="fa fa-linkedin-square" style="font-size:24px"></i> : <a href="https://www.linkedin.com/in/josef-marcelino-sijaya/">LinkedIn</a> </p>
+          <p>Github <i class="fa fa-github" style="font-size:24px"></i>:<a href="https://github.com/Marszell">Github</a></p>
+        </div>
+          
+        <form action="submit_contact_form.php" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+              
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit">Send Message</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+	<script src="./script.js"></script>
+</body>
+</html>
