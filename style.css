@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+
+section {
+  height: 278vh;
+  background: url(./DN.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul {
+  position: fixed;
+  padding: 0 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+
+.wrapper {
+  position: relative;
+  border-radius: 20px;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffffff70;
+}
+
+/* layer styling */
+
+.layer h1, h2 {
+  text-transform: uppercase
+}
+
+.layer h2 {
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.layer h1 {
+  font-size: 12em;
+  line-height: 1;
+  font-weight: 900;
+  background: url(./DN.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-clip: text;
+  color: transparent;
+}
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+section#About {
+  background: url(./screen.png);
+  height: auto;
+  padding: 10%;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#About h2 {
+  font-size: 40px;
+  color: rgb(232, 231, 231);
+  padding-bottom: 30px;
+  text-transform: none;
+}
+
+.description p {
+  color: rgb(69, 69, 69);
+}
+
+.bySide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 200px;
+}
+
+section.wrap {
+  height: auto;
+  padding: 10%;
+  color: #333;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+}
+
+section#Project h1{
+  font-size: 40px;
+  padding-bottom: 30px;
+  text-transform: none;
+  color: #8db2ff;
+}
+
+.show{
+  position: relative;
+  border-radius: 20px;
+  padding: 3%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffffff70;
+}
+
+.show.card{
+  color: #111;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffffc3;
+}
+
+.card:hover, .image:hover {
+  transition: .5s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.card:hover{
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+section#Contact h1{
+  font-size: 40px;
+  padding-bottom: 30px;
+  text-transform: none;
+  color: #8db2ff;
+}
+
+.image img {
+  height: 30rem;
+}
+
+.image.gambar {
+  height: 240px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info .p {
+  margin: 5px 0;
+  color: #555;
+  font-size: larger;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .wrapper, .bySide {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .layer h1 {
+      font-size: 6em;
+  }
+
+  .layer h2 {
+      font-size: 1.5em;
+  }
+
+  .show {
+      grid-template-columns: 1fr;
+  }
+
+  img.gambar{
+    height: 140px;
+  }
+
+  .form-group input, 
+  .form-group textarea {
+      font-size: 14px;
+  }
+
+  .form-group button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .layer h1 {
+      font-size: 4em;
+  }
+
+  .layer h2 {
+      font-size: 1.2em;
+  }
+  .image.gambar{
+    height: 100px;
+  }
+
+  .form-group input, 
+  .form-group textarea {
+      font-size: 12px;
+  }
+
+  .form-group button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
